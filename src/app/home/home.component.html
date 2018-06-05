@@ -1,0 +1,29 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav opened mode="side">Start content</mat-sidenav>
+  <mat-sidenav opened mode="side" position="end">End content</mat-sidenav>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <span>First Row</span>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <span>Second Row</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="content"
+       fxLayout="row"
+       fxLayout.xs="column"
+       fxLayoutAlign="space-around center" >
+
+      <div fxFlex="10" class="sec1" fxFlex.xs="55">
+          first-section
+      </div>
+      <div fxFlex="30" class="sec2" >
+          second-section
+      </div>
+      <div fxFlex="20" class="sec3" fxFlex.xs="15">
+          third-section
+      </div>
+  </div>
+  <div>{{appTitle}}, {{currentDate | date}}</div>
+</mat-sidenav-container>
